@@ -1,0 +1,64 @@
+# .NET Core & ASP.NET Core
+bin/
+obj/
+
+# User-specific files
+*.vs
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build output
+*.dll
+*.exe
+*.log
+*.pdb
+*.cache
+*.csproj.user
+*.pidb
+*.sdf
+*.sqlite
+*.sqlite3
+
+# Entity Framework migrations
+Migrations/
+
+# Environment variables
+.env
+appsettings.Development.json
+
+# Rider project files
+.idea/
+
+# macOS files
+.DS_Store
+
+# Windows files
+Thumbs.db
+
+# Node.js dependencies (if applicable)
+node_modules/
+
+# Logs
+logs/
+*.log
+
+# NuGet packages
+*.nupkg
+*.snupkg
+packages/
+
+# Publish output
+publish/
+wwwroot/
+
+# Docker
+**/[Dd]ocker*
+
+# JetBrains Rider project files
+.idea/
+
+# Visual Studio Code workspace settings
+.vscode/

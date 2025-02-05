@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C0281F51-1255-43AD-8EA3-0083AB35DAC7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Projekat</RootNamespace>
+    <AssemblyName>Projekat</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DodajGrupu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodajGrupu.Designer.cs">
+      <DependentUpon>DodajGrupu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DodajRezultate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodajRezultate.Designer.cs">
+      <DependentUpon>DodajRezultate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DodajTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodajTest.Designer.cs">
+      <DependentUpon>DodajTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDodajGrupu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDodajGrupu.Designer.cs">
+      <DependentUpon>FrmDodajGrupu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPretragaGrupa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPretragaGrupa.Designer.cs">
+      <DependentUpon>FrmPretragaGrupa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPretragaTestova.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPretragaTestova.Designer.cs">
+      <DependentUpon>FrmPretragaTestova.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graph.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graph.Designer.cs">
+      <DependentUpon>Graph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GraphNastavnici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GraphNastavnici.Designer.cs">
+      <DependentUpon>GraphNastavnici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GraphResults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GraphResults.Designer.cs">
+      <DependentUpon>GraphResults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IzmenaGrupe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IzmenaGrupe.Designer.cs">
+      <DependentUpon>IzmenaGrupe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IzmeniPolaznika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IzmeniPolaznika.Designer.cs">
+      <DependentUpon>IzmeniPolaznika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PretragaPolaznika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PretragaPolaznika.Designer.cs">
+      <DependentUpon>PretragaPolaznika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PretraziGrupe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PretraziGrupe.Designer.cs">
+      <DependentUpon>PretraziGrupe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrikazGrupe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrikazGrupe.Designer.cs">
+      <DependentUpon>PrikazGrupe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrikaziTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrikaziTest.Designer.cs">
+      <DependentUpon>PrikaziTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnosGrupe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnosGrupe.Designer.cs">
+      <DependentUpon>UnosGrupe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DodajPolaznika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodajPolaznika.Designer.cs">
+      <DependentUpon>DodajPolaznika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrikaziTestove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrikaziTestove.Designer.cs">
+      <DependentUpon>FrmPrikaziTestove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPretragaPolaznika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPretragaPolaznika.Designer.cs">
+      <DependentUpon>FrmPretragaPolaznika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PodaciOPolazniku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PodaciOPolazniku.Designer.cs">
+      <DependentUpon>PodaciOPolazniku.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnosKursa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnosKursa.Designer.cs">
+      <DependentUpon>UnosKursa.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DodajGrupu.resx">
+      <DependentUpon>DodajGrupu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DodajPolaznika.resx">
+      <DependentUpon>DodajPolaznika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DodajRezultate.resx">
+      <DependentUpon>DodajRezultate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DodajTest.resx">
+      <DependentUpon>DodajTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDodajGrupu.resx">
+      <DependentUpon>FrmDodajGrupu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPretragaGrupa.resx">
+      <DependentUpon>FrmPretragaGrupa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPretragaPolaznika.resx">
+      <DependentUpon>FrmPretragaPolaznika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPretragaTestova.resx">
+      <DependentUpon>FrmPretragaTestova.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrikaziTestove.resx">
+      <DependentUpon>FrmPrikaziTestove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph.resx">
+      <DependentUpon>Graph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GraphNastavnici.resx">
+      <DependentUpon>GraphNastavnici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GraphResults.resx">
+      <DependentUpon>GraphResults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IzmenaGrupe.resx">
+      <DependentUpon>IzmenaGrupe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IzmeniPolaznika.resx">
+      <DependentUpon>IzmeniPolaznika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PodaciOPolazniku.resx">
+      <DependentUpon>PodaciOPolazniku.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PretragaPolaznika.resx">
+      <DependentUpon>PretragaPolaznika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PretraziGrupe.resx">
+      <DependentUpon>PretraziGrupe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrikazGrupe.resx">
+      <DependentUpon>PrikazGrupe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrikaziTest.resx">
+      <DependentUpon>PrikaziTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UnosGrupe.resx">
+      <DependentUpon>UnosGrupe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnosKursa.resx">
+      <DependentUpon>UnosKursa.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Domen\Domen.csproj">
+      <Project>{E69B5C0F-03AA-4FAB-9553-A98454781F3D}</Project>
+      <Name>Domen</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Komunikacija\Komunikacija.csproj">
+      <Project>{F2B38B9B-1EFA-4B52-A884-01F50BB587A3}</Project>
+      <Name>Komunikacija</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KontrolerPoslovneLogike\KontrolerPoslovneLogike.csproj">
+      <Project>{2BE6E6F8-7B21-4F26-A639-6D363F886C56}</Project>
+      <Name>KontrolerPoslovneLogike</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
